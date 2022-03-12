@@ -1,0 +1,63 @@
+3 Specific Requirements
+3.1 external interfaces 
+The system will possess the following interfaces and their respective inputs and outputs and how they operate or function 
+   3.1.1 customer interface 
+	This interface will allow the customer to place an order through capturing his inputs such as selection of the dishes, number of dishes to be served and type of foods that is either local or international foods. further more the customer will be able to revert the items selected and finally place an order. The system will bill the customer according to the items selected and a detailed reciept will be displayed, also a the chef will be notified on what the customer wants.
+3.1.2  chef interface
+	This interface will give the chef an opportunity to add certain types of foods that are not available or not included by default through his dashboard. The chef recieves a notification and sends an alert message consisting of the time to prepare the order for the customer. 
+ 3.1.3  manager interface
+This interface will enable the manager to oversee and keep track of whatever activities (transactions) made by customers on the system. This manager dashboard will contain "see more" feature that will enable him to see how many successfully and failure transactions made on the system. This will enable the admin to evaluate the performance of the system.
+3.2  Functions
+ 	3.2.1 On customer interface, a closed menu display option showing the list of foods and soft drinks available and their respective bills or prices attached to them. The system will minimize various typos in the system to prevent malicious attacks or faults.  So the system will maximize selection option menus to parse inputs to the system. 
+	3.2.2  On chef interface, the chef will insert images of the foods available and description of the image through the input fields provided by the system. The inserted items will be available at the customer interface.
+3.3 Performance Requirements
+3.3.1 static requirements 
+	Here the system will support (25) twenty five simultaneous connections from  the terminal, (200) two hundred simultaneous users to operate their activities, the amount and information type include selected items, billing information and other information.
+3.3.2 Dynamic requirements
+	According to the customers using the system, it is  estimated that  80% of the customer's transaction shall be pressed in less than 5 seconds.
+3.4 Logical Database Requirements 
+On the information recieved from the customer, the information will pass through several business requirements to verify if it meets all the constraints put otherwise it will be rejected by the system. Such as information include:-
+the selection of the foods and drinks ( the stored information will be the description and the name of the items ).  The stored procedures will be put to check the validity of data.
+the number of dishes to be served ( This will be a numerical value from the customer )
+Information from chef will be :
+foods (The stored information will be in form of image such as blob data ).
+3.5 Design Constraints
+	The system will be compatible with the hardware with the folllowing specifications
+	- 500 MB of Random Access Memory (RAM)
+	- 512 MBs of Hard disk space 
+	  1.2GHz  processor Speed
+ 
+1 .1 customer order
+the customer ordering proccess will for customer to use while ordering three different types of dishes he/she entertains and they are as follows
+ in this interface or screen the customer will be able to see all the dishes available with the nice pictures of the dishesand there price  
+system requirents
+4.1 place order
+.1 description
+the customer via the app will be abble to make order for certain dishes by selecting the available dish he or she wants,the appplicatio
+will display available dishes and unavailable dishes at the moment on the menu which will be displayed diffrently from orthers(available)
+the customer will be able to select multiple dishes and there quantity and will be shown his or her to be bill with an option of changing the ordered items.  
+.2input and output sequences
+ .1 input
+if the users enters the menu interface ,
+the system displays a list of available and unavailable dishes with there respective 
+prices and the offers of the day if any
+     1.1 output
+  the customers taps on an available dish
+the system displays the dish and price per serving of that dish as well as a dropdown list of numbers for the customer  to  choose the of the particuar dish he/she wants to be served with,An OK button to comfirm the order and a cancel button to decline the order of that particular dish
+ .1.1
+input
+if the customer taps on an unavailable dish
+output
+the system display an alert message"currently not available"
+.1.2
+input
+if the customers tap the cancel button 
+response
+the order is canceled and the customer is taken back to the menu screen
+
+2.1 input 
+if the customer taps on the comfirm button at the buttom of the app the entire ordering is closed and a new interface is displayed showing the
+the collective bill of the selected dishes as well as drinks if any ,a timer which hows the amount of time that it wiill take to make the order ready with an option of edit which enables you toedit your orders as well as a comfirm button to make the order authentic
+  -the customer taps on thecomfirm button at bottom
+response
+-the system closes the oder screen and displays the cancel order alongside acccept order buttons
